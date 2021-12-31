@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0.8rem;
+  align-items: center;
+  border-bottom: 0.1rem solid rgb(201, 201, 201);
+}
+.navbar__logo {
+  height: 4rem;
+  object-fit: contain;
+}
+.navbar__center {
+  background-color: #eee;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2.7rem;
+}
+.navbar__search {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  width: 25rem;
+  background-color: #eee;
+  border-right: 0.1rem solid #888;
+}
+.navbar__search:focus {
+  outline: none;
+}
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+.navbar__button:hover {
+  color: #000 !important;
+}
+
+@media (max-width: 900px) {
+  .navbar__search {
+    width: 12rem;
+  }
+  .navbar__right {
+    display: none;
+  }
+}

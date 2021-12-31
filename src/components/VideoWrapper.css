@@ -1,0 +1,13 @@
+.videoWrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.videoWrapper > hr {
+  border: 0.1rem solid rgb(216, 214, 214);
+}
+
+@media (max-width: 500px) {
+  .videoWrapper {
+    width: 98%;
+  }
+}

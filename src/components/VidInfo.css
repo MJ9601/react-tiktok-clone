@@ -1,0 +1,16 @@
+.vidInfo > div {
+  background-color: rgb(206, 204, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.vidInfo {
+  margin-bottom: 1.5rem;
+}
+.vidInfo > h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}

@@ -1,0 +1,25 @@
+.vidhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+.vidhead__left {
+  display: flex;
+  justify-content: flex-start;
+}
+.vidhead__info {
+  margin-left: 1rem;
+}
+.vidhead__info > h3 {
+  font-size: 1.8rem;
+}
+.vidhead__info > h3 > span {
+  font-weight: 400;
+  color: #999;
+}
+.vidhead__info > p {
+  font-size: 1.5rem;
+  color: #999;
+  padding-right: 1rem;
+}

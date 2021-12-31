@@ -1,0 +1,9 @@
+.videoDisplay {
+  flex: 0.75;
+  padding: 1rem 2.5rem;
+  height: calc(100vh - 6.5rem);
+  overflow-y: scroll;
+}
+.videoDisplay::-webkit-scrollbar {
+  display: none;
+}
