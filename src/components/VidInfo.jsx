@@ -7,7 +7,7 @@ const VidInfo = ({ Icon, count }) => {
       <div>
         <Icon sx={{ fontSize: "3rem" }} />
       </div>
-      <h6>count</h6>
+      <h6>{count}</h6>
     </div>
   );
 };

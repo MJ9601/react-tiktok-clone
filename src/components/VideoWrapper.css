@@ -1,6 +1,7 @@
 .videoWrapper {
   width: 90%;
   margin: 0 auto;
+  scroll-snap-align: start;
 }
 .videoWrapper > hr {
   border: 0.1rem solid rgb(216, 214, 214);

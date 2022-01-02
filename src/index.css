@@ -5,6 +5,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-snap-type: y mandatory;
 }
 body {
   margin: 0;
@@ -34,7 +35,12 @@ code {
 .app__dispaly {
   display: flex;
 }
-@media (max-width: 700px) {
+@media (max-width: 1300px) {
+  .app__container {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
   .app__container {
     width: 98%;
   }

@@ -23,3 +23,17 @@
   color: #999;
   padding-right: 1rem;
 }
+.vidhead__strong {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+p.vidhead__tags {
+  color: #000;
+}
+p.vidhead__music {
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+}

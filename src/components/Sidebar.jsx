@@ -1,11 +1,26 @@
 import { Camera, Home, People, VideoCameraFront } from "@mui/icons-material";
 import { Button } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
+import { useGlobalState } from "../globalState";
 import "./Sidebar.css";
 import SidebarAvatar from "./SidebarAvatar";
 import SidebarOptions from "./SidebarOptions";
 
 const Sidebar = () => {
+  const [{ users, posts }, dispatch] = useGlobalState();
+  useEffect(() => {
+    dispatch({
+      type: "SET_USERS",
+      users: posts.map((post) => {
+        return {
+          userName: post.userName,
+          userImg: post.userImg,
+          userNickName: post.userNickName,
+        };
+      }),
+    });
+  }, [posts]);
+  console.log(users);
   return (
     <div className="sidebar">
       <SidebarOptions Icon={Home} title="For You" />
@@ -31,8 +46,14 @@ const Sidebar = () => {
       <hr />
       <h2>Suggested accounts</h2>
       <div>
-        <SidebarAvatar user />
-        <SidebarAvatar user />
+        {users.map((user, index) => (
+          <SidebarAvatar
+            key={index}
+            username={user.userName}
+            name={user.userNickName}
+            userImg={user.userImg}
+          />
+        ))}
       </div>
       <hr />
       <h2>About</h2>
